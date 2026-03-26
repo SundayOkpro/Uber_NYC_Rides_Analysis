@@ -12,9 +12,11 @@ Using Python and popular analytics libraries, this project performs data cleanin
 **File:** `uber-raw-data-janjune-15.csv`  
 
 **Columns include:**
-- `Pickup_date` – Timestamp of ride pickup
-- `Lat` & `Lon` – Pickup location coordinates
-- `Base` – Dispatching base code
+- `Dispatching_base_num
+- Pickup_date
+- Affiliated_base_num
+- locationID
+
 
 **Dataset Size:** ~6 months of ride data with hundreds of thousands of records
 
@@ -31,7 +33,6 @@ Using Python and popular analytics libraries, this project performs data cleanin
 ## Project Workflow
 
 # 1️⃣ Data Extraction
-```python
 import pandas as pd
 import os
 
@@ -101,7 +102,7 @@ fig.show()
 # Save interactive chart as static image for README
 fig.write_image("./images/month_weekday_trips.png")
 
-7️⃣ Key Insights
+##7️⃣ Key Insights
 Fridays and Saturdays consistently have the highest ride volumes.
 Weekdays (Monday–Wednesday) show lower ride volumes.
 There is a clear weekday-weekend trend that can guide:
@@ -115,7 +116,7 @@ Monthly Uber Trips
 
 
 
-OKPRO SUNDAY
+##OKPRO SUNDAY
 Data Analyst
 
 GitHub: https://github.com/SundayOkpro
