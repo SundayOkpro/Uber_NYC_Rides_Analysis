@@ -9,7 +9,6 @@ Using data analysis and visualization techniques, the project uncovers temporal 
 
 ## Dataset
 **Source:** Uber raw data (Jan–Jun 2015)  
-**Kaggle Link:** [Uber Pickups in New York City](https://www.kaggle.com/datasets/fivethirtyeight/uber-pickups-in-new-york-city)  
 **File:** `uber-raw-data-janjune-15.csv`  
 
 **Columns include:**
@@ -44,29 +43,45 @@ Using data analysis and visualization techniques, the project uncovers temporal 
    - Weekday analysis to observe trends across the week  
 
 4. **Visualizations**  
+   - Bar charts for monthly Uber trips  
+   - Grouped bar charts for month vs weekday ride patterns  
 
-**Monthly Uber Trips**
-![Monthly Uber Trips]
-
-**Uber Trips by Month and Weekday**
-![Uber Trips by Month and Weekday]
+5. **Key Insights**  
+   - Fridays and Saturdays consistently have the highest ride volumes  
+   - Weekdays (Monday–Wednesday) show lower ride volumes  
+   - Clear weekday-weekend trends guide:  
+     - Driver scheduling  
+     - Resource allocation  
+     - Targeted promotions  
 
 ---
 
-## Key Insights
-- Fridays and Saturdays consistently have the highest ride volumes  
-- Weekdays (Monday–Wednesday) show lower ride volumes  
-- Clear weekday-weekend trends that can guide:  
-  - Driver scheduling  
-  - Resource allocation  
-  - Targeted promotions  
+## Visualizations
+- **Monthly Uber Trips** – Shows the number of rides per month  
+- **Uber Trips by Month and Weekday** – Highlights peak weekdays for rides  
+
+*(Images are saved in the `/images` folder in the repository)*
 
 ---
 
 ## Usage Instructions
-1. Clone or download the repository.  
-2. Place the dataset in the `/Datasets` folder.  
-3. Install required packages:
+1. Clone or download the repository  
+2. Place the dataset in the `/Datasets` folder  
+3. Open the Jupyter Notebook or Python script to explore the analysis  
+4. Visualizations and charts will be generated automatically  
 
-```bash
-pip install pandas numpy matplotlib seaborn plotly kaleido
+---
+
+## Future Improvements
+- Add geospatial visualizations for NYC neighborhoods  
+- Explore hourly ride patterns for more granular insights  
+- Build predictive models to forecast ride demand  
+
+---
+
+## Author
+**OKPRO SUNDAY**  
+Data Analyst  
+
+- GitHub: (https://github.com/SundayOkpro)
+-  LinkedIn: (https://www.linkedin.com/in/sunday-okpro-983072112/)
