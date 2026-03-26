@@ -32,14 +32,14 @@ Using Python and popular analytics libraries, this project performs data cleanin
 
 ## Project Workflow
 
-# 1️⃣ Data Extraction
+1️⃣ Data Extraction
 import pandas as pd
 import os
 
 # Verify dataset
 os.listdir(r"C:\Users\sunda\Downloads\Uber\Datasets")
 
-#2️⃣ Data Cleaning
+2️⃣ Data Cleaning
 Remove duplicates
 uber_15.drop_duplicates(inplace=True)
 
@@ -49,7 +49,7 @@ print(uber_15.isnull().sum())
 Convert Pickup_date to datetime
 uber_15['Pickup_date'] = pd.to_datetime(uber_15['Pickup_date'])
 
-#3️⃣ Feature Engineering
+3️⃣ Feature Engineering
 uber_15['month'] = uber_15['Pickup_date'].dt.month_name()
 uber_15['weekday'] = uber_15['Pickup_date'].dt.day_name()
 uber_15['day'] = uber_15['Pickup_date'].dt.day
@@ -57,7 +57,7 @@ uber_15['hour'] = uber_15['Pickup_date'].dt.hour
 uber_15['minute'] = uber_15['Pickup_date'].dt.minute
 
 
-#4️⃣ Month-wise Analysis
+4️⃣ Month-wise Analysis
 
 
 month_order = ["January","February","March","April","May","June"]
@@ -74,14 +74,14 @@ plt.tight_layout()
 plt.show()
 
 
-#5️⃣ Crosstab Analysis (Month vs Weekday)
+5️⃣ Crosstab Analysis (Month vs Weekday)
 weekday_order = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
 
 pivot = pd.crosstab(index=uber_15['month'], columns=uber_15['weekday'])
 pivot = pivot.reindex(index=month_order, columns=weekday_order)
 pivot.head()
 
-#6️⃣ Grouped Bar Chart (Plotly Express)
+6️⃣ Grouped Bar Chart (Plotly Express)
 import plotly.express as px
 fig = px.bar(
     pivot,
@@ -111,7 +111,6 @@ Resource allocation
 Targeted promotions
 Visualizations
 Monthly Uber Trips
-
 
 
 
