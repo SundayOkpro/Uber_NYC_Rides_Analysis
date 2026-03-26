@@ -46,10 +46,10 @@ Using data analysis and visualization techniques, the project uncovers temporal 
 4. **Visualizations**  
 
 **Monthly Uber Trips**
-![Monthly Uber Trips](./images/monthly_trips.png)
+![Monthly Uber Trips]
 
 **Uber Trips by Month and Weekday**
-![Uber Trips by Month and Weekday](./images/month_weekday_trips.png)
+![Uber Trips by Month and Weekday]
 
 ---
 
