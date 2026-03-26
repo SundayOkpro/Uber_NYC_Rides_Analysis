@@ -31,7 +31,7 @@ Using data analysis and visualization techniques, the project uncovers temporal 
 ---
 
 ## Project Workflow
-1. **Data Extraction & Cleaning**  
+1. **Data Extraction, Loading & Cleaning**  
    - Load dataset and remove duplicates  
    - Handle missing values  
    - Correct data types for analysis  
