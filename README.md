@@ -1,35 +1,43 @@
-Uber NYC Rides Analysis (Jan–Jun 2015)
-Project Overview
+# Uber NYC Rides Analysis (Jan–Jun 2015)
 
+## Project Overview
 This project analyzes Uber ride data in New York City from January to June 2015. The goal is to explore ride patterns, identify peak demand periods, and provide actionable insights for ride scheduling, resource allocation, and service optimization.
 
 Using Python and popular analytics libraries, this project performs data cleaning, feature engineering, exploratory data analysis (EDA), and visualization to uncover temporal trends in Uber trips.
 
-Dataset
-Source: Uber raw data (Jan–Jun 2015)
-File: uber-raw-data-janjune-15.csv
-Columns include:
-Pickup_date – Timestamp of ride pickup
-Lat & Lon – Pickup location coordinates
-Base – Dispatching base code
+---
 
-Dataset Size: ~6 months of ride data with hundreds of thousands of records
+## Dataset
+**Source:** Uber raw data (Jan–Jun 2015)  
+**File:** `uber-raw-data-janjune-15.csv`  
 
-Technologies and Libraries
-Python 3.10+
-Data Manipulation: pandas, numpy
-Visualization: matplotlib, seaborn, plotly.express
-OS & File Management: os
-Project Workflow
-1️⃣ Data Extraction
+**Columns include:**
+- `Pickup_date` – Timestamp of ride pickup
+- `Lat` & `Lon` – Pickup location coordinates
+- `Base` – Dispatching base code
+
+**Dataset Size:** ~6 months of ride data with hundreds of thousands of records
+
+---
+
+## Technologies and Libraries
+- **Python 3.10+**
+- **Data Manipulation:** pandas, numpy
+- **Visualization:** matplotlib, seaborn, plotly.express
+- **OS & File Management:** os
+
+---
+
+## Project Workflow
+
+### 1️⃣ Data Extraction
+```python
 import pandas as pd
 import os
 
 # Verify dataset
 os.listdir(r"C:\Users\sunda\Downloads\Uber\Datasets")
 
-# Load dataset
-uber_15 = pd.read_csv(r"C:\Users\sunda\Downloads\Uber\Datasets\uber-raw-data-janjune-15.csv")
 2️⃣ Data Cleaning
 # Remove duplicates
 uber_15.drop_duplicates(inplace=True)
@@ -102,22 +110,12 @@ Targeted promotions
 Visualizations
 Monthly Uber Trips
 
-Uber Trips by Month and Weekday
 
-Usage Instructions
-Clone or download the repository
-Install required packages:
-pip install pandas numpy matplotlib seaborn plotly
-Place the dataset in the /Datasets folder
-Run the Jupyter Notebook or Python script to perform analysis and generate charts
-Future Improvements
-Add geospatial visualization for NYC neighborhoods
-Explore hourly ride patterns for more granular insights
-Build predictive models to forecast ride demand
-Author
+
+
 
 OKPRO SUNDAY
-
 Data Analyst
-GitHub: [your_github_profile]
-LinkedIn: [your_linkedin_profile]
+
+GitHub: https://github.com/SundayOkpro
+LinkedIn: https://www.linkedin.com/in/sunday-okpro-983072112/
