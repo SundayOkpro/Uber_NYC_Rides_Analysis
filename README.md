@@ -6,9 +6,9 @@ This project analyzes Uber ride data in New York City from January to June 2015.
 Using data analysis and visualization techniques, the project uncovers temporal trends in Uber trips and highlights high-demand periods across months and weekdays.
 
 ---
-
 ## Dataset
 **Source:** Uber raw data (Jan–Jun 2015)  
+**Kaggle Link:** [Uber Pickups in New York City](https://www.kaggle.com/datasets/fivethirtyeight/uber-pickups-in-new-york-city)  
 **File:** `uber-raw-data-janjune-15.csv`  
 
 **Columns include:**
